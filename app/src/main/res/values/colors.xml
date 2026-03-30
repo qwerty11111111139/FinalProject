@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="black_premium">#0D0D0D</color> <color name="gold_accent">#D4AF37</color>   <color name="gold_button">#8B7355</color>   <color name="white">#FFFFFF</color>
+    <color name="gray_label">#808080</color>
 </resources>
