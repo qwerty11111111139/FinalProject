@@ -15,7 +15,8 @@ class MenuActivity : AppCompatActivity() {
         // 1. ОСОБИСТІ ДАНІ
         val btnPersonalData = findViewById<TextView>(R.id.btnPersonalData)
         btnPersonalData.setOnClickListener {
-            startActivity(Intent(this, PersonalDataActivity::class.java))
+            // Виправлено назву на ту, що у тебе в проекті
+            startActivity(Intent(this, OrderHistoryActivity::class.java))
         }
 
         // 2. ІСТОРІЯ ЗАМОВЛЕНЬ
@@ -24,19 +25,21 @@ class MenuActivity : AppCompatActivity() {
             startActivity(Intent(this, OrderHistoryActivity::class.java))
         }
 
+
         // 3. ВИННА КАРТА
         val btnWineCatalog = findViewById<TextView>(R.id.btnWineCatalog)
         btnWineCatalog.setOnClickListener {
-            startActivity(Intent(this, WineDetailsActivity::class.java))
+            // Міняємо на WineCardActivity
+            startActivity(Intent(this, WineCardActivity::class.java))
         }
 
         // 4. ОБРАНЕ
         val btnFavorites = findViewById<TextView>(R.id.btnFavorites)
         btnFavorites.setOnClickListener {
-            // Поки що можна залишити порожнім або відкрити заглушку
+            // Можна додати пізніше
         }
 
-        // 5. НАЛАШТУВАННЯ (Наш пріоритет!)
+        // 5. НАЛАШТУВАННЯ
         val btnSettings = findViewById<TextView>(R.id.btnSettings)
         btnSettings.setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
