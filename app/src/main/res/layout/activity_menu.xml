@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_premium"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Мій Кабінет"
+            android:textColor="@color/gold_accent"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="serif" />
+
+        <TextView
+            android:id="@+id/btnPersonalData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ОСОБИСТІ ДАНІ"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:paddingVertical="20dp"
+            android:letterSpacing="0.1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/btnOrderHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ІСТОРІЯ ЗАМОВЛЕНЬ"
+            android:textColor="@color/gold_accent"
+            android:textSize="16sp"
+            android:paddingVertical="20dp"
+            android:letterSpacing="0.1" />
+
+        <TextView
+            android:id="@+id/btnWineCatalog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ВИННА КАРТА"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:paddingVertical="20dp"
+            android:letterSpacing="0.1" />
+
+        <TextView
+            android:id="@+id/btnFavorites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ОБРАНЕ"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:paddingVertical="20dp"
+            android:letterSpacing="0.1" />
+
+        <TextView
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="НАЛАШТУВАННЯ"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:paddingVertical="20dp"
+            android:layout_marginTop="20dp"
+            android:letterSpacing="0.1" />
+
+        <TextView
+            android:id="@+id/btnMainScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ГОЛОВНИЙ ЕКРАН"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:paddingVertical="20dp"
+            android:letterSpacing="0.1" />
+
+        <TextView
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ВИЙТИ"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:paddingVertical="20dp"
+            android:layout_marginTop="40dp"
+            android:alpha="0.7"
+            android:letterSpacing="0.1" />
+
+    </LinearLayout>
+</ScrollView>
