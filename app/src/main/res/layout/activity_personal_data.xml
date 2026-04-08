@@ -1,92 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    android:fillViewport="true">
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#000000">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_revert"
+            android:padding="8dp"
+            app:tint="#C5A059" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="40dp"
+            android:layout_centerInParent="true"
             android:text="ОСОБИСТІ ДАНІ"
-            android:textColor="#FFD700"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:letterSpacing="0.1" />
+            android:textColor="#C5A059"
+            android:textSize="22sp"
+            android:fontFamily="serif" />
+    </RelativeLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Прізвище"
-            android:textColor="#80FFFFFF"
-            android:textSize="14sp" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ім'я" android:textColor="#8A94A6" android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/etProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#C5A059"
+        android:layout_marginBottom="15dp" />
 
-        <EditText
-            android:id="@+id/etLastName"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginBottom="24dp"
-            android:backgroundTint="#FFD700"
-            android:hint="Введіть прізвище"
-            android:textColor="@color/white"
-            android:textColorHint="#4DFFFFFF"
-            android:inputType="textPersonName" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Прізвище" android:textColor="#8A94A6" android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/etProfileSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#C5A059"
+        android:layout_marginBottom="15dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ім'я"
-            android:textColor="#80FFFFFF"
-            android:textSize="14sp" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email" android:textColor="#8A94A6" android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/etProfileEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#C5A059"
+        android:layout_marginBottom="15dp" />
 
-        <EditText
-            android:id="@+id/etFirstName"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginBottom="24dp"
-            android:backgroundTint="#FFD700"
-            android:hint="Введіть ім'я"
-            android:textColor="@color/white"
-            android:textColorHint="#4DFFFFFF"
-            android:inputType="textPersonName" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Телефон" android:textColor="#8A94A6" android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/etProfilePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#C5A059" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Номер телефону"
-            android:textColor="#80FFFFFF"
-            android:textSize="14sp" />
-
-        <EditText
-            android:id="@+id/etPhone"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginBottom="32dp"
-            android:backgroundTint="#FFD700"
-            android:hint="+380 (XX) XXX-XX-XX"
-            android:textColor="@color/white"
-            android:textColorHint="#4DFFFFFF"
-            android:inputType="phone" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSaveData"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="16dp"
-            android:background="#FFD700"
-            android:text="ЗБЕРЕГТИ ЗМІНИ"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>
